@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search App</h1>
+        <input type="text" id="search-input" placeholder="Search for a movie...">
+        <button id="search-button">Search</button>
+        <button id="back-button">Back</button>
+        <div id="spinner" class="spinner"></div>
+        <div id="results"></div>
+        <div id="movie-details">
+            <div id="movie-info"></div> <!-- Separate div for movie info -->
+            <div id="review-form">
+                <h3>Leave a Review</h3>
+                <input type="text" id="reviewer-name" placeholder="Your name">
+                <textarea id="review-text" placeholder="Your review"></textarea>
+                <button id="submit-review">Submit Review</button>
+            </div>
+            <div id="reviews">
+                <h3>Reviews</h3>
+                <div id="reviews-list"></div>
+            </div>
+        </div>
+        <div id="recently-viewed"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
